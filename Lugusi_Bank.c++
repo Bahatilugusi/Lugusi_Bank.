@@ -232,6 +232,12 @@ void simBanking()
         cout << "\nTransaction of $" << a.amount << " to GigoPesa is succefully.\n\n";
         break;
 
+            case 4:
+        cout << "Enter Amout of Money You want to transfer: ";
+        cin >> a.amount;
+        cout << "\nTransaction of $" << a.amount << " to AzamPesa is succefully.\n\n";
+        break;
+
 
 
 
