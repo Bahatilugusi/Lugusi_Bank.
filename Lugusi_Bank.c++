@@ -134,10 +134,9 @@ void loginAccount()
     }
 }
 
- if (accounts.empty())
-    {
-        cout << "\nNo Account Found";
-    }
+void checkAccounts()
+{
+    vector<Account> accounts = loadAccounts();
 
 
 
