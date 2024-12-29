@@ -242,6 +242,13 @@ void simBanking()
         displayM();
         break;
 
+          default:
+        cout << "\n\tInvalid choice!, please select from the Menu\n\n";
+        break;
+    }
+    goto m;
+}
+
 
 
 
