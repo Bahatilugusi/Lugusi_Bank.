@@ -186,6 +186,10 @@ vector<Account> loadAccounts()
                 getline(file, a.password);
                 file >> a.amount;
 
+                   accounts.push_back(a);
+                saveAccounts(accounts);
+            }
+
 
 
 
