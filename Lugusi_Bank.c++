@@ -134,5 +134,9 @@ void loginAccount()
     }
 }
 
+void checkAccounts()
+{
+    vector<Account> accounts = loadAccounts();
+
 
 
