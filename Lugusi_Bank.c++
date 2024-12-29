@@ -252,6 +252,7 @@ void simBanking()
 
 void service()
 {
+    vector<Account> accounts = loadAccounts();
 
 
 
