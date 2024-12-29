@@ -250,6 +250,9 @@ void simBanking()
     goto m;
 }
 
+void service()
+{
+
 
 
 
