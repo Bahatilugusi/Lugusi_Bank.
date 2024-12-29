@@ -155,6 +155,8 @@ void saveAccounts(const vector<Account> &accounts)
 {
     ofstream file(filename, ios::trunc);
 
+     if (file.is_open())
+
 
 
 
