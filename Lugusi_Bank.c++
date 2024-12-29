@@ -141,6 +141,15 @@ void checkAccounts()
     {
         cout << "\nNo Account Found";
     }
+     else
+    {
+        cout << "\n\t\t-------ACCOUNT LIST-------\n";
+        for (auto &a : accounts)
+        {
+            a.display();
+        }
+    }
+}
 
 
 
