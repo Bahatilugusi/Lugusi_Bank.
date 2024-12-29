@@ -277,6 +277,10 @@ void service()
             cout << "\n\t Your new Balance is $" << a.amount;
             break;
 
+                    case 2:
+            cout << "\nEnter amount of Money to Withdraw: ";
+            cin >> amount;
+
 
 
 
