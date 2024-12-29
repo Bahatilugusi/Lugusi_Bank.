@@ -281,6 +281,17 @@ void service()
             cout << "\nEnter amount of Money to Withdraw: ";
             cin >> amount;
 
+             if (a.amount >= amount)
+            {
+                a.amount -= amount;
+                cout << "\n\tYour new balance is $" << a.amount;
+            }
+            else
+            {
+                cout << "\nYou do not have enough Balance!";
+            }
+            break;
+
 
 
 
