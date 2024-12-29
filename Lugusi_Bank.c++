@@ -220,6 +220,13 @@ void simBanking()
         cout << "\nTransaction of $" << a.amount << " to EirtelMoney is succefully.\n\n";
         break;
 
+        case 2:
+        cout << "Enter Amout of Money You want to transfer: ";
+        cin >> a.amount;
+        cout << "\nTransaction of $" << a.amount << " to HaloPesa is succefully.\n\n";
+        break;
+
+
 
 
 
