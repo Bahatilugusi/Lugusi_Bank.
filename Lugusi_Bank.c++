@@ -94,3 +94,12 @@ void createAccount()
     accounts.push_back(a);
     saveAccounts(accounts);
 }
+
+void loginAccount()
+{
+    vector<Account> accounts = loadAccounts();
+
+    int id;
+    string password;
+    bool found = false;
+
