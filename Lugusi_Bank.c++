@@ -296,6 +296,11 @@ void service()
             cout << "\n\t\tYour initial balance is $" << a.amount;
             break;
 
+             case 4:
+            simBanking();
+            break;
+
+
 
 
 
