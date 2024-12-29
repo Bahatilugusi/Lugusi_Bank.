@@ -300,6 +300,11 @@ void service()
             simBanking();
             break;
 
+             case 5:
+            displayM();
+            break;
+
+
 
 
 
