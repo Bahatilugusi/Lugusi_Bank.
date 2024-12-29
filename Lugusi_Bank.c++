@@ -238,6 +238,11 @@ void simBanking()
         cout << "\nTransaction of $" << a.amount << " to AzamPesa is succefully.\n\n";
         break;
 
+        case 5:
+        displayM();
+        break;
+
+
 
 
 
