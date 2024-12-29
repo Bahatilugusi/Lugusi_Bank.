@@ -304,6 +304,12 @@ void service()
             displayM();
             break;
 
+              saveAccounts(accounts);
+        }
+
+    } while (choice != 6);
+}
+
 
 
 
