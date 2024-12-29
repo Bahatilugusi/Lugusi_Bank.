@@ -53,3 +53,21 @@ void displayM()
         cout << "\n4. Exit.";
         cout << "\nEnter your choice: ";
         cin >> choice;
+
+        switch (choice)
+        {
+        case 1:
+            createAccount();
+            break;
+        case 2:
+            loginAccount();
+            break;
+        case 3:
+            checkAccounts();
+            break;
+        case 4:
+            cout << "\nExiting..!";
+        default:
+            cout << "invalid Choice, Please try again!";
+            break;
+        }
