@@ -173,6 +173,19 @@ vector<Account> loadAccounts()
     vector<Account> accounts;
      ifstream file(filename);
 
+     if (file.is_open())
+    {
+        Account a;
+        for (auto &a : accounts)
+        {
+            while (file >> a.id)
+            {
+                file.ignore();
+                getline(file, a.name);
+                file.ignore();
+                getline(file, a.password);
+                file >> a.amount;
+
 
 
 
