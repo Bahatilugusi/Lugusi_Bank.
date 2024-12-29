@@ -195,6 +195,9 @@ vector<Account> loadAccounts()
     return accounts;
 }
 
+void simBanking()
+{
+
 
 
 
