@@ -259,7 +259,15 @@ void service()
 
      do
     {
-    }while(choice)
+        cout << "\n1. Deposite Money";
+        cout << "\n2. Withdraw Money";
+        cout << "\n3. Account Balance";
+        cout << "\n4. Sim Banking.";
+        cout << "\n5. Back to Main Menu";
+        cout << "\n6. Exit.!";
+        cout << "\nSelect Your choice";
+        cin >> choice;
+
 
 
 
