@@ -201,7 +201,7 @@ void simBanking()
     Account a;
     system("cls");
     int choice;
-    
+
     // double amount;
     cout << "\n\n\t-------SIMBANKING--------\n";
     cout << "\n1. EirtelMoney";
@@ -211,6 +211,9 @@ void simBanking()
     cout << "\n5. Back to Main Menu";
     cout << "\n\tPlease select your choice: ";
     cin >> choice;
+
+    switch (choice)
+    {
 
 
 
