@@ -106,4 +106,13 @@ void loginAccount()
     cout << "\nEnter Account DI to Login: ";
     cin >> id;
 
+     for (auto &a : accounts)
+    {
+        if (a.id == id)
+        {
+            found = true;
+            cin.ignore();
+            cout << "Enter your password: ";
+            getline(cin, password);
+
 
