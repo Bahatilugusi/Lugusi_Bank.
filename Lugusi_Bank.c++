@@ -270,6 +270,12 @@ void service()
 
          switch (choice)
         {
+            case 1:
+            cout << "\nEnter amount of Money to Depose: ";
+            cin >> amount;
+            a.amount += amount;
+            cout << "\n\t Your new Balance is $" << a.amount;
+            break;
 
 
 
