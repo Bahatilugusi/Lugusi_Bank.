@@ -115,4 +115,17 @@ void loginAccount()
             cout << "Enter your password: ";
             getline(cin, password);
 
+             if (a.password == password)
+            {
+
+                service();
+                saveAccounts(accounts);
+            }
+            else
+            {
+                cout << "Invalid Password, Try again.";
+            }
+        }
+    }
+
 
