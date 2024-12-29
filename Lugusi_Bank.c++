@@ -168,6 +168,10 @@ void saveAccounts(const vector<Account> &accounts)
     }
 }
 
+vector<Account> loadAccounts()
+{
+    vector<Account> accounts;
+
 
 
 
