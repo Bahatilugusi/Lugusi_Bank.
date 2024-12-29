@@ -197,6 +197,9 @@ vector<Account> loadAccounts()
 
 void simBanking()
 {
+    vector<Account> accounts = loadAccounts();
+    Account a;
+    system("cls");
 
 
 
