@@ -88,4 +88,9 @@ void createAccount()
     cin.ignore();
     cout << "\nEnter Your Password";
     getline(cin, a.password);
+
+      service();
+
+    accounts.push_back(a);
+    saveAccounts(accounts);
 }
