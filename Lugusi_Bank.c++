@@ -189,6 +189,11 @@ vector<Account> loadAccounts()
                    accounts.push_back(a);
                 saveAccounts(accounts);
             }
+              }
+        file.close();
+    }
+    return accounts;
+}
 
 
 
