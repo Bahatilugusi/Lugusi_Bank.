@@ -26,3 +26,13 @@ vector<Account> loadAccounts();
 void simBanking();
 void displayM();
 void service();
+
+const string filename = "banker.txt";
+
+int main()
+{
+    system("cls");
+    displayM();
+
+    return 0;
+}
