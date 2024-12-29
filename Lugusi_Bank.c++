@@ -72,6 +72,20 @@ void displayM()
             break;
         }
 
-
            } while (choice != 4);
+}
+
+void createAccount()
+{
+    vector<Account> accounts = loadAccounts();
+    Account a;
+
+    cout << "\nEnter your ID: ";
+    cin >> a.id;
+    cin.ignore();
+    cout << "\nEnter your Name: ";
+    getline(cin, a.name);
+    cin.ignore();
+    cout << "\nEnter Your Password";
+    getline(cin, a.password);
 }
