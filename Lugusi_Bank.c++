@@ -36,3 +36,20 @@ int main()
 
     return 0;
 }
+
+// ACCOUNT DEFINITIONS
+
+void displayM()
+{
+    system("cls");
+    int choice;
+    do
+    {
+        cout << "\n\t\tWELCOME TO BANK ACCOUNT MANAGEMENT SYSTEM";
+        cout << "\n\t\t__________________________________________";
+        cout << "\n1. Create an Account.";
+        cout << "\n2. Login to Account.";
+        cout << "\n3. Check Accouts";
+        cout << "\n4. Exit.";
+        cout << "\nEnter your choice: ";
+        cin >> choice;
