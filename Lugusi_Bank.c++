@@ -253,6 +253,9 @@ void simBanking()
 void service()
 {
     vector<Account> accounts = loadAccounts();
+     Account a;
+    double amount;
+    int choice;
 
 
 
