@@ -72,7 +72,7 @@ void displayM()
             break;
         }
 
-           } while (choice != 4);
+    } while (choice != 4);
 }
 
 void createAccount()
@@ -89,7 +89,7 @@ void createAccount()
     cout << "\nEnter Your Password";
     getline(cin, a.password);
 
-      service();
+    service();
 
     accounts.push_back(a);
     saveAccounts(accounts);
@@ -106,7 +106,7 @@ void loginAccount()
     cout << "\nEnter Account DI to Login: ";
     cin >> id;
 
-     for (auto &a : accounts)
+    for (auto &a : accounts)
     {
         if (a.id == id)
         {
@@ -115,7 +115,7 @@ void loginAccount()
             cout << "Enter your password: ";
             getline(cin, password);
 
-             if (a.password == password)
+            if (a.password == password)
             {
 
                 service();
@@ -128,7 +128,7 @@ void loginAccount()
         }
     }
 
-     if (!found)
+    if (!found)
     {
         cout << "An Account with ID: " << id << " not found!";
     }
@@ -137,11 +137,11 @@ void loginAccount()
 void checkAccounts()
 {
     vector<Account> accounts = loadAccounts();
-        if (accounts.empty())
+    if (accounts.empty())
     {
         cout << "\nNo Account Found";
     }
-     else
+    else
     {
         cout << "\n\t\t-------ACCOUNT LIST-------\n";
         for (auto &a : accounts)
@@ -155,8 +155,8 @@ void saveAccounts(const vector<Account> &accounts)
 {
     ofstream file(filename, ios::trunc);
 
-     if (file.is_open())
-     {
+    if (file.is_open())
+    {
         for (const auto &a : accounts)
         {
             file << a.id << "\n"
@@ -171,9 +171,9 @@ void saveAccounts(const vector<Account> &accounts)
 vector<Account> loadAccounts()
 {
     vector<Account> accounts;
-     ifstream file(filename);
+    ifstream file(filename);
 
-     if (file.is_open())
+    if (file.is_open())
     {
         Account a;
         for (auto &a : accounts)
@@ -186,10 +186,10 @@ vector<Account> loadAccounts()
                 getline(file, a.password);
                 file >> a.amount;
 
-                   accounts.push_back(a);
+                accounts.push_back(a);
                 saveAccounts(accounts);
             }
-              }
+        }
         file.close();
     }
     return accounts;
@@ -202,8 +202,8 @@ void simBanking()
     system("cls");
     int choice;
 
-    // double amount;
-    m:
+// double amount;
+m:
     cout << "\n\n\t-------SIMBANKING--------\n";
     cout << "\n1. EirtelMoney";
     cout << "\n2. HaloPesa";
@@ -215,35 +215,35 @@ void simBanking()
 
     switch (choice)
     {
-        case 1:
+    case 1:
         cout << "Enter Amout of Money You want to transfer: ";
         cin >> a.amount;
         cout << "\nTransaction of $" << a.amount << " to EirtelMoney is succefully.\n\n";
         break;
 
-        case 2:
+    case 2:
         cout << "Enter Amout of Money You want to transfer: ";
         cin >> a.amount;
         cout << "\nTransaction of $" << a.amount << " to HaloPesa is succefully.\n\n";
         break;
 
-        case 3:
+    case 3:
         cout << "Enter Amout of Money You want to transfer: ";
         cin >> a.amount;
         cout << "\nTransaction of $" << a.amount << " to GigoPesa is succefully.\n\n";
         break;
 
-            case 4:
+    case 4:
         cout << "Enter Amout of Money You want to transfer: ";
         cin >> a.amount;
         cout << "\nTransaction of $" << a.amount << " to AzamPesa is succefully.\n\n";
         break;
 
-        case 5:
+    case 5:
         displayM();
         break;
 
-          default:
+    default:
         cout << "\n\tInvalid choice!, please select from the Menu\n\n";
         break;
     }
@@ -253,11 +253,11 @@ void simBanking()
 void service()
 {
     vector<Account> accounts = loadAccounts();
-     Account a;
+    Account a;
     double amount;
     int choice;
 
-     do
+    do
     {
         cout << "\n1. Deposite Money";
         cout << "\n2. Withdraw Money";
@@ -268,20 +268,20 @@ void service()
         cout << "\nSelect Your choice";
         cin >> choice;
 
-         switch (choice)
+        switch (choice)
         {
-            case 1:
+        case 1:
             cout << "\nEnter amount of Money to Depose: ";
             cin >> amount;
             a.amount += amount;
             cout << "\n\t Your new Balance is $" << a.amount;
             break;
 
-                    case 2:
+        case 2:
             cout << "\nEnter amount of Money to Withdraw: ";
             cin >> amount;
 
-             if (a.amount >= amount)
+            if (a.amount >= amount)
             {
                 a.amount -= amount;
                 cout << "\n\tYour new balance is $" << a.amount;
@@ -292,33 +292,20 @@ void service()
             }
             break;
 
-              case 3:
+        case 3:
             cout << "\n\t\tYour initial balance is $" << a.amount;
             break;
 
-             case 4:
+        case 4:
             simBanking();
             break;
 
-             case 5:
+        case 5:
             displayM();
             break;
 
-              saveAccounts(accounts);
+            saveAccounts(accounts);
         }
 
     } while (choice != 6);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
