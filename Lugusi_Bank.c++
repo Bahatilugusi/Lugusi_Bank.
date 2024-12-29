@@ -292,6 +292,11 @@ void service()
             }
             break;
 
+              case 3:
+            cout << "\n\t\tYour initial balance is $" << a.amount;
+            break;
+
+
 
 
 
