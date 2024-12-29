@@ -71,3 +71,7 @@ void displayM()
             cout << "invalid Choice, Please try again!";
             break;
         }
+
+
+           } while (choice != 4);
+}
