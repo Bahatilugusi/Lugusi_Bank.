@@ -151,5 +151,10 @@ void checkAccounts()
     }
 }
 
+void saveAccounts(const vector<Account> &accounts)
+{
+    ofstream file(filename, ios::trunc);
+
+
 
 
