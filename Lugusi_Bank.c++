@@ -203,6 +203,7 @@ void simBanking()
     int choice;
 
     // double amount;
+    m:
     cout << "\n\n\t-------SIMBANKING--------\n";
     cout << "\n1. EirtelMoney";
     cout << "\n2. HaloPesa";
