@@ -214,6 +214,11 @@ void simBanking()
 
     switch (choice)
     {
+        case 1:
+        cout << "Enter Amout of Money You want to transfer: ";
+        cin >> a.amount;
+        cout << "\nTransaction of $" << a.amount << " to EirtelMoney is succefully.\n\n";
+        break;
 
 
 
