@@ -25,8 +25,6 @@ void simBanking(vector<Account> &accounts);
 
 
 
-const string filename = "banker.txt";
-
 int main()
 {
     system("cls");
