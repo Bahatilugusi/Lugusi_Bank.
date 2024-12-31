@@ -118,18 +118,18 @@ void loginAccount(vector<Account> &accounts)
 
 }  
 
-void checkAccounts()
+void readAccounts(const vector<Account> &accounts)
 {
-    vector<Account> accounts = loadAccounts();
     if (accounts.empty())
     {
-        cout << "\nNo Account Found";
+        cout << "\nNo Account Found!";
     }
     else
     {
-        cout << "\n\t\t-------ACCOUNT LIST-------\n";
-        for (auto &a : accounts)
+        for (const auto &a : accounts)
         {
+            cout << "\n\t\t  ACCOUNT LIST";
+            cout << "\n\t\t*****************";
             a.display();
         }
     }
