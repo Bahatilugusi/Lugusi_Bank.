@@ -80,12 +80,16 @@ void createAccount(vector<Account> &accounts)
     cout << "\nEnter User name: ";
     getline(cin, a.name);
 
-
-    service();
-
+  cout << "\nEnter Account Password: ";
+    cin.ignore();
+    getline(cin, a.password);
+    service(accounts);
     accounts.push_back(a);
-    saveAccounts(accounts);
+    cout << "\nCreating Account Successfully!";
+    return;
 }
+
+   
 
 void loginAccount()
 {
