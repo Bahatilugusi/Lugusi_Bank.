@@ -159,6 +159,21 @@ void service(vector<Account> &accounts)
         cout << "\n\t Your new Balance is $" << a.balance;
         break;
 
+        case 2:
+        cout << "\nEnter amount of Money to Withdraw: ";
+        cin >> amount;
+        if (a.balance >= amount)
+        {
+            a.balance -= amount;
+            cout << "\n\tYour new balance is $" << a.balance;
+        }
+        else
+        {
+            cout << "\nYou do not have enough Balance!";
+        }
+        break;
+
+
 
 void simBanking()
 {
