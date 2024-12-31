@@ -31,45 +31,44 @@ int main()
     displayM(accounts);
 }
 
-
-
-// ACCOUNT DEFINITIONS
-
-void displayM()
+// FUNCTION DEFINITION
+void displayM(vector<Account> &accounts)
 {
-    system("cls");
     int choice;
     do
     {
-        cout << "\n\t\tWELCOME TO BANK ACCOUNT MANAGEMENT SYSTEM";
-        cout << "\n\t\t__________________________________________";
-        cout << "\n1. Create an Account.";
-        cout << "\n2. Login to Account.";
-        cout << "\n3. Check Accouts";
+        cout << "\n\t\t\tBANK SYSTEM MANAGEMENT.";
+        cout << "\n\t\t\t************************";
+        cout << "\n1. Create New Account.";
+        cout << "\n2. Login Account.";
+        cout << "\n3. Read Account.";
         cout << "\n4. Exit.";
-        cout << "\nEnter your choice: ";
+        cout << "\n\t Select your choice: ";
         cin >> choice;
 
         switch (choice)
         {
         case 1:
-            createAccount();
+            createAccount(accounts);
+            break;
             break;
         case 2:
-            loginAccount();
+            loginAccount(accounts);
             break;
         case 3:
-            checkAccounts();
+            readAccounts(accounts);
             break;
         case 4:
-            cout << "\nExiting..!";
+            cout << "\nExiting.!";
+            break;
         default:
-            cout << "invalid Choice, Please try again!";
+            cout << "\nInvalid Choice. Try again!";
             break;
         }
 
     } while (choice != 4);
 }
+
 
 void createAccount()
 {
