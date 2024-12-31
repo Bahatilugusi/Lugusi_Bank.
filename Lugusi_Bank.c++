@@ -242,71 +242,10 @@ void simBanking(vector<Account> &accounts)
         case 5:
         displayM(accounts);
         break;
-        
+
         default:
         cout << "\n\tInvalid choice!, please select from the Menu\n\n";
         break;
     }
     goto m;
-}
-
-
-void service()
-{
-    vector<Account> accounts = loadAccounts();
-    Account a;
-    double amount;
-    int choice;
-
-    do
-    {
-        cout << "\n1. Deposite Money";
-        cout << "\n2. Withdraw Money";
-        cout << "\n3. Account Balance";
-        cout << "\n4. Sim Banking.";
-        cout << "\n5. Back to Main Menu";
-        cout << "\n6. Exit.!";
-        cout << "\nSelect Your choice";
-        cin >> choice;
-
-        switch (choice)
-        {
-        case 1:
-            cout << "\nEnter amount of Money to Depose: ";
-            cin >> amount;
-            a.amount += amount;
-            cout << "\n\t Your new Balance is $" << a.amount;
-            break;
-
-        case 2:
-            cout << "\nEnter amount of Money to Withdraw: ";
-            cin >> amount;
-
-            if (a.amount >= amount)
-            {
-                a.amount -= amount;
-                cout << "\n\tYour new balance is $" << a.amount;
-            }
-            else
-            {
-                cout << "\nYou do not have enough Balance!";
-            }
-            break;
-
-        case 3:
-            cout << "\n\t\tYour initial balance is $" << a.amount;
-            break;
-
-        case 4:
-            simBanking();
-            break;
-
-        case 5:
-            displayM();
-            break;
-
-            saveAccounts(accounts);
-        }
-
-    } while (choice != 6);
 }
