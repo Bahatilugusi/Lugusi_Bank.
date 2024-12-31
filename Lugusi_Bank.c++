@@ -91,7 +91,7 @@ void createAccount(vector<Account> &accounts)
 
    
 
-void loginAccount()
+void loginAccount(vector<Account> &accounts)
 {
     vector<Account> accounts = loadAccounts();
 
