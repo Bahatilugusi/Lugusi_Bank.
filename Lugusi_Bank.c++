@@ -130,7 +130,7 @@ void readAccounts(const vector<Account> &accounts)
         {
             cout << "\n\t\t  ACCOUNT LIST";
             cout << "\n\t\t*****************";
-            a.display();
+         a.display();
         }
     }
 }
