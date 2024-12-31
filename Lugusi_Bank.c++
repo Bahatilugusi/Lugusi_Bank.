@@ -16,12 +16,14 @@ struct Account
     }
 };
 
+void displayM(vector<Account> &accounts);
+void createAccount(vector<Account> &accounts);
+void loginAccount(vector<Account> &accounts);
+void readAccounts(const vector<Account> &accounts);
+void service(vector<Account> &accounts);
+void simBanking(vector<Account> &accounts);
 
-void createAccount();
-void loginAccount();
-void simBanking();
-void displayM();
-void service();
+
 
 const string filename = "banker.txt";
 
