@@ -1,21 +1,21 @@
 #include <iostream>
-#include <string>
 #include <vector>
-
+#include <string>
 using namespace std;
 
 struct Account
 {
-    int id;
+    int an;
     string name;
     string password;
-    double amount;
+    double balance;
 
-    void display()
+    void display() const
     {
-        cout << "\nID: " << id << "\nName: " << name << "\nBalance: $" << amount << endl;
+        cout << "\nAccount No: " << an << "\nUser Name: " << name << "\nAccount Balance: $" << balance << endl;
     }
 };
+
 
 void createAccount();
 void loginAccount();
