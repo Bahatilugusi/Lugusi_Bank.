@@ -69,7 +69,6 @@ void displayM(vector<Account> &accounts)
     } while (choice != 4);
 }
 
-
 void createAccount(vector<Account> &accounts)
 {
     Account a;
@@ -80,7 +79,7 @@ void createAccount(vector<Account> &accounts)
     cout << "\nEnter User name: ";
     getline(cin, a.name);
 
-  cout << "\nEnter Account Password: ";
+    cout << "\nEnter Account Password: ";
     cin.ignore();
     getline(cin, a.password);
     service(accounts);
@@ -89,15 +88,13 @@ void createAccount(vector<Account> &accounts)
     return;
 }
 
-   
-
 void loginAccount(vector<Account> &accounts)
 {
     Account a;
     int an;
     string password;
 
-     cout << "\nEnter Account Number to login Account: ";
+    cout << "\nEnter Account Number to login Account: ";
     cin >> an;
 
     for (auto &a : accounts)
@@ -114,9 +111,8 @@ void loginAccount(vector<Account> &accounts)
             }
         }
     }
-               cout << "\nAccount with Account No: " << an << " is not found!";
-
-}  
+    cout << "\nAccount with Account No: " << an << " is not found!";
+}
 
 void readAccounts(const vector<Account> &accounts)
 {
@@ -137,11 +133,11 @@ void readAccounts(const vector<Account> &accounts)
 
 void service(vector<Account> &accounts)
 {
-      Account a;
+    Account a;
     double amount;
     int choice;
 
-    m:
+m:
     cout << "\n1. Deposite Money.";
     cout << "\n2. Withdraw Money.";
     cout << "\n3. Balance.";
@@ -150,16 +146,16 @@ void service(vector<Account> &accounts)
     cout << "\nSelect Your choice: ";
     cin >> choice;
 
-     switch (choice)
+    switch (choice)
     {
-         case 1:
+    case 1:
         cout << "\nEnter amount of Money to Depose: ";
         cin >> amount;
         a.balance += amount;
         cout << "\n\t Your new Balance is $" << a.balance;
         break;
 
-        case 2:
+    case 2:
         cout << "\nEnter amount of Money to Withdraw: ";
         cin >> amount;
         if (a.balance >= amount)
@@ -173,19 +169,19 @@ void service(vector<Account> &accounts)
         }
         break;
 
-         case 3:
+    case 3:
         cout << "\n\t\tYour initial balance is $" << a.balance;
         break;
 
-         case 4:
+    case 4:
         simBanking(accounts);
         break;
 
-        case 5:
+    case 5:
         displayM(accounts);
         break;
 
-            default:
+    default:
         cout << "\nInvalid choice, Try again!";
         break;
     }
@@ -193,16 +189,13 @@ void service(vector<Account> &accounts)
     goto m;
 }
 
-
-
-
 void simBanking(vector<Account> &accounts)
 {
-   system("cls");
+    system("cls");
     Account a;
-     int choice;
+    int choice;
 
-     m:
+m:
     // double amount;
     cout << "\n\n\t-------SIMBANKING--------\n";
     cout << "\n1. EirtelMoney";
@@ -213,37 +206,37 @@ void simBanking(vector<Account> &accounts)
     cout << "\n\tPlease select your choice: ";
     cin >> choice;
 
-     switch (choice)
+    switch (choice)
     {
-        case 1:
+    case 1:
         cout << "Enter Amout of Money You want to transfer: ";
         cin >> a.balance;
         cout << "\nTransaction of $" << a.balance << " to EirtelMoney is succefully.\n\n";
         break;
 
-        case 2:
+    case 2:
         cout << "Enter Amout of Money You want to transfer: ";
         cin >> a.balance;
         cout << "\nTransaction of $" << a.balance << " to HaloPesa is succefully.\n\n";
         break;
 
-            case 3:
+    case 3:
         cout << "Enter Amout of Money You want to transfer: ";
         cin >> a.balance;
         cout << "\nTransaction of $" << a.balance << " to GigoPesa is succefully.\n\n";
         break;
 
-         case 4:
+    case 4:
         cout << "Enter Amout of Money You want to transfer: ";
         cin >> a.balance;
         cout << "\nTransaction of $" << a.balance << " to AzamPesa is succefully.\n\n";
         break;
 
-        case 5:
+    case 5:
         displayM(accounts);
         break;
 
-        default:
+    default:
         cout << "\n\tInvalid choice!, please select from the Menu\n\n";
         break;
     }
