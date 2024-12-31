@@ -177,6 +177,11 @@ void service(vector<Account> &accounts)
         cout << "\n\t\tYour initial balance is $" << a.balance;
         break;
 
+         case 4:
+        simBanking(accounts);
+        break;
+
+
 
 
 void simBanking()
