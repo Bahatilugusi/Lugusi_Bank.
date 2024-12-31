@@ -213,6 +213,9 @@ void simBanking(vector<Account> &accounts)
     cout << "\n\tPlease select your choice: ";
     cin >> choice;
 
+     switch (choice)
+    {
+
 
 void service()
 {
