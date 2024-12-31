@@ -196,7 +196,7 @@ void service(vector<Account> &accounts)
 
 
 
-void simBanking()
+void simBanking(vector<Account> &accounts)
 {
     vector<Account> accounts = loadAccounts();
     Account a;
