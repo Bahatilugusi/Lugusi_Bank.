@@ -130,27 +130,12 @@ void readAccounts(const vector<Account> &accounts)
         {
             cout << "\n\t\t  ACCOUNT LIST";
             cout << "\n\t\t*****************";
-         a.display();
+            a.display();
         }
     }
 }
 
-void saveAccounts(const vector<Account> &accounts)
-{
-    ofstream file(filename, ios::trunc);
 
-    if (file.is_open())
-    {
-        for (const auto &a : accounts)
-        {
-            file << a.id << "\n"
-                 << a.name << "\n"
-                 << a.password << "\n"
-                 << a.amount << "\n";
-        }
-        file.close();
-    }
-}
 
 vector<Account> loadAccounts()
 {
