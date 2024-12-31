@@ -242,6 +242,13 @@ void simBanking(vector<Account> &accounts)
         case 5:
         displayM(accounts);
         break;
+        
+        default:
+        cout << "\n\tInvalid choice!, please select from the Menu\n\n";
+        break;
+    }
+    goto m;
+}
 
 
 void service()
