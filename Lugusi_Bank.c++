@@ -135,7 +135,8 @@ void readAccounts(const vector<Account> &accounts)
     }
 }
 
-
+void service(vector<Account> &accounts)
+{
 
 
 void simBanking()
