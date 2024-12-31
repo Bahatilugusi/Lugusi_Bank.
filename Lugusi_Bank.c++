@@ -198,7 +198,9 @@ void service(vector<Account> &accounts)
 
 void simBanking(vector<Account> &accounts)
 {
-   
+   system("cls");
+    Account a;
+     int choice;
 
 // double amount;
 m:
