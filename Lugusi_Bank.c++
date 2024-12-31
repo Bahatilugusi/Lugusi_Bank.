@@ -114,16 +114,7 @@ void loginAccount(vector<Account> &accounts)
             }
         }
     }
-                cout << "Invalid Password, Try again.";
-            }
-        }
-    }
-
-    if (!found)
-    {
-        cout << "An Account with ID: " << id << " not found!";
-    }
-}
+                
 
 void checkAccounts()
 {
