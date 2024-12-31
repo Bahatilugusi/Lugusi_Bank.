@@ -19,9 +19,6 @@ struct Account
 
 void createAccount();
 void loginAccount();
-void checkAccounts();
-void saveAccounts(vector<Account> &accounts);
-vector<Account> loadAccounts();
 void simBanking();
 void displayM();
 void service();
