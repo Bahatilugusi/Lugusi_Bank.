@@ -141,6 +141,15 @@ void service(vector<Account> &accounts)
     double amount;
     int choice;
 
+    m:
+    cout << "\n1. Deposite Money.";
+    cout << "\n2. Withdraw Money.";
+    cout << "\n3. Balance.";
+    cout << "\n4. Sim Banking.";
+    cout << "\n5. Back(MENU).";
+    cout << "\nSelect Your choice: ";
+    cin >> choice;
+
 
 void simBanking()
 {
