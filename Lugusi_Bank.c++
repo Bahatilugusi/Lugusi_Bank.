@@ -239,10 +239,9 @@ void simBanking(vector<Account> &accounts)
         cout << "\nTransaction of $" << a.balance << " to AzamPesa is succefully.\n\n";
         break;
 
-         case 5:
+        case 5:
         displayM(accounts);
         break;
-
 
 
 void service()
