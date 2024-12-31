@@ -202,6 +202,17 @@ void simBanking(vector<Account> &accounts)
     Account a;
      int choice;
 
+     m:
+    // double amount;
+    cout << "\n\n\t-------SIMBANKING--------\n";
+    cout << "\n1. EirtelMoney";
+    cout << "\n2. HaloPesa";
+    cout << "\n3. TigoPesa";
+    cout << "\n4. AzamPesa";
+    cout << "\n5. Back(MENU)";
+    cout << "\n\tPlease select your choice: ";
+    cin >> choice;
+
 // double amount;
 m:
     cout << "\n\n\t-------SIMBANKING--------\n";
