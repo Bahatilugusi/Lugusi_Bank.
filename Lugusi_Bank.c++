@@ -152,6 +152,12 @@ void service(vector<Account> &accounts)
 
      switch (choice)
     {
+         case 1:
+        cout << "\nEnter amount of Money to Depose: ";
+        cin >> amount;
+        a.balance += amount;
+        cout << "\n\t Your new Balance is $" << a.balance;
+        break;
 
 
 void simBanking()
