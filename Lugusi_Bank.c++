@@ -23,15 +23,15 @@ void readAccounts(const vector<Account> &accounts);
 void service(vector<Account> &accounts);
 void simBanking(vector<Account> &accounts);
 
-
-
 int main()
 {
-    system("cls");
-    displayM();
 
-    return 0;
+    system("cls");
+    vector<Account> accounts;
+    displayM(accounts);
 }
+
+
 
 // ACCOUNT DEFINITIONS
 
