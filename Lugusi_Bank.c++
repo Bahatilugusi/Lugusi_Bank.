@@ -93,11 +93,10 @@ void createAccount(vector<Account> &accounts)
 
 void loginAccount(vector<Account> &accounts)
 {
-    vector<Account> accounts = loadAccounts();
-
-    int id;
+    Account a;
+    int an;
     string password;
-    bool found = false;
+
 
     cout << "\nEnter Account DI to Login: ";
     cin >> id;
