@@ -70,19 +70,16 @@ void displayM(vector<Account> &accounts)
 }
 
 
-void createAccount()
+void createAccount(vector<Account> &accounts)
 {
-    vector<Account> accounts = loadAccounts();
     Account a;
 
-    cout << "\nEnter your ID: ";
-    cin >> a.id;
+    cout << "\nEnter Account No: ";
+    cin >> a.an;
     cin.ignore();
-    cout << "\nEnter your Name: ";
+    cout << "\nEnter User name: ";
     getline(cin, a.name);
-    cin.ignore();
-    cout << "\nEnter Your Password";
-    getline(cin, a.password);
+
 
     service();
 
