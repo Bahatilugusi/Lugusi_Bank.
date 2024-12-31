@@ -102,21 +102,18 @@ void loginAccount(vector<Account> &accounts)
 
     for (auto &a : accounts)
     {
-        if (a.id == id)
+        if (a.an == an)
         {
-            found = true;
             cin.ignore();
-            cout << "Enter your password: ";
+            cout << "\nEnter Your Password: ";
             getline(cin, password);
-
             if (a.password == password)
             {
-
-                service();
-                saveAccounts(accounts);
+                service(accounts);
+                accounts.push_back(a);
             }
-            else
-            {
+        }
+    }
                 cout << "Invalid Password, Try again.";
             }
         }
