@@ -213,53 +213,6 @@ void simBanking(vector<Account> &accounts)
     cout << "\n\tPlease select your choice: ";
     cin >> choice;
 
-// double amount;
-m:
-    cout << "\n\n\t-------SIMBANKING--------\n";
-    cout << "\n1. EirtelMoney";
-    cout << "\n2. HaloPesa";
-    cout << "\n3. TigoPesa";
-    cout << "\n4. AzamPesa";
-    cout << "\n5. Back to Main Menu";
-    cout << "\n\tPlease select your choice: ";
-    cin >> choice;
-
-    switch (choice)
-    {
-    case 1:
-        cout << "Enter Amout of Money You want to transfer: ";
-        cin >> a.amount;
-        cout << "\nTransaction of $" << a.amount << " to EirtelMoney is succefully.\n\n";
-        break;
-
-    case 2:
-        cout << "Enter Amout of Money You want to transfer: ";
-        cin >> a.amount;
-        cout << "\nTransaction of $" << a.amount << " to HaloPesa is succefully.\n\n";
-        break;
-
-    case 3:
-        cout << "Enter Amout of Money You want to transfer: ";
-        cin >> a.amount;
-        cout << "\nTransaction of $" << a.amount << " to GigoPesa is succefully.\n\n";
-        break;
-
-    case 4:
-        cout << "Enter Amout of Money You want to transfer: ";
-        cin >> a.amount;
-        cout << "\nTransaction of $" << a.amount << " to AzamPesa is succefully.\n\n";
-        break;
-
-    case 5:
-        displayM();
-        break;
-
-    default:
-        cout << "\n\tInvalid choice!, please select from the Menu\n\n";
-        break;
-    }
-    goto m;
-}
 
 void service()
 {
