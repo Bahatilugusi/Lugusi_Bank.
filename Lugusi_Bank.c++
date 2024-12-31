@@ -97,9 +97,8 @@ void loginAccount(vector<Account> &accounts)
     int an;
     string password;
 
-
-    cout << "\nEnter Account DI to Login: ";
-    cin >> id;
+     cout << "\nEnter Account Number to login Account: ";
+    cin >> an;
 
     for (auto &a : accounts)
     {
