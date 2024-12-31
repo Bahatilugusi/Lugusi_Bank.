@@ -181,6 +181,10 @@ void service(vector<Account> &accounts)
         simBanking(accounts);
         break;
 
+        case 5:
+        displayM(accounts);
+        break;
+
 
 
 
