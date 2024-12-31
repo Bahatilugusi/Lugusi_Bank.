@@ -233,6 +233,11 @@ void simBanking(vector<Account> &accounts)
         cout << "\nTransaction of $" << a.balance << " to GigoPesa is succefully.\n\n";
         break;
 
+         case 4:
+        cout << "Enter Amout of Money You want to transfer: ";
+        cin >> a.balance;
+        cout << "\nTransaction of $" << a.balance << " to AzamPesa is succefully.\n\n";
+        break;
 
 
 void service()
