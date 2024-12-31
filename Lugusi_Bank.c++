@@ -137,32 +137,6 @@ void readAccounts(const vector<Account> &accounts)
 
 
 
-vector<Account> loadAccounts()
-{
-    vector<Account> accounts;
-    ifstream file(filename);
-
-    if (file.is_open())
-    {
-        Account a;
-        for (auto &a : accounts)
-        {
-            while (file >> a.id)
-            {
-                file.ignore();
-                getline(file, a.name);
-                file.ignore();
-                getline(file, a.password);
-                file >> a.amount;
-
-                accounts.push_back(a);
-                saveAccounts(accounts);
-            }
-        }
-        file.close();
-    }
-    return accounts;
-}
 
 void simBanking()
 {
